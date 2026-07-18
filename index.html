@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Clientes </title>
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+<h2>Registro de Clientes</h2>
+
+<form id="frmCliente">
+
+    <input
+        type="text"
+        id="nombre"
+        placeholder="Nombre">
+
+    <input
+        type="text"
+        id="apellido"
+        placeholder="Apellido">
+
+    <select id="rol">
+
+        <option>Administrador</option>
+        <option>Cliente</option>
+        <option>Invitado</option>
+
+    </select>
+
+    <button type="submit">
+        Registrar
+    </button>
+
+</form>
+
+<div id="mensaje"></div>
+
+<script type="module" src="app.js"></script>
+
+</body>
+</html>
