@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Clientes</title>
+</head>
+<body>
+
+    <h2>Registro de Clientes</h2>
+
+    <form id="frmCliente">
+
+        <label for="nombre">Nombre</label><br>
+        <input type="text" id="nombre" required><br><br>
+
+        <label for="apellido">Apellido</label><br>
+        <input type="text" id="apellido" required><br><br>
+
+        <label for="rol">Rol</label><br>
+        <select id="rol" required>
+            <option value="">Seleccione un rol</option>
+            <option value="Administrador">Administrador</option>
+            <option value="Cliente">Cliente</option>
+            <option value="Invitado">Invitado</option>
+        </select><br><br>
+
+        <button type="submit">Guardar</button>
+
+    </form>
+
+    <h3 id="saludo"></h3>
+
+    <script type="module" src="controlador.js"></script>
+
+</body>
+</html>
